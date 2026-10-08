@@ -23,10 +23,6 @@ export default function HeroBanner() {
   <p className="hero-banner-description">Aluminium and copper. Sourced from trusted suppliers. Connected to international industrial demand.</p>
   <div className="button-row"><Link href="/contact" className="trade-button">Sell to Enreach ↗</Link><Link href="#products" className="hero-banner-secondary">View what we buy ↗</Link></div>
   <p className="hero-banner-trust">Global sourcing · Competitive pricing · Reliable execution</p>
-  <div className="hero-banner-controls" role="group" aria-label="Hero carousel controls">
-   {HERO_IMAGES.map((src,index) => <button key={src} type="button" className="hero-slide-dot" aria-label={`Show slide ${index+1}`} aria-pressed={slide===index}
-    onClick={() => setSlide(index)}><span aria-hidden="true"/></button>)}
-  </div>
  </div>
  </section>;
 }

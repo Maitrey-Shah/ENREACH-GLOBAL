@@ -16,7 +16,7 @@ test("homepage keeps reference section order, catalogue and working brand assets
  for (const match of html.matchAll(/href="\/#([^"]+)"/g)) assert(html.includes(`id="${match[1]}"`),`Broken home anchor: ${match[1]}`);
  assert(!html.includes("enreachlogo-transparent.png"));
  assert(!html.includes("enreach-global-logo.jpeg"));
- for (let slide=1; slide<=4; slide++) assert(html.includes(`aria-label="Show slide ${slide}"`));
+ assert(!html.includes("hero-slide-dot"));
  assert(html.includes('aria-roledescription="carousel"'));
  for (const image of ["aluminium-zorba", "copper-wire", "aluminium-ubc", "copper-transformers"]) {
   assert(html.includes(`hero-banner-${image}-v2.jpg`));
